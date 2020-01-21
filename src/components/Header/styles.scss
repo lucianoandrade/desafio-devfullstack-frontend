@@ -1,0 +1,72 @@
+.headerContainer {
+    display: flex;
+    background: #F5F5F5;
+    height: 100px;
+    width: 100%;
+    padding: 0 25px;
+    min-width: 750px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px -4px #c1c1c1;
+
+
+     .toSeparate{
+            border-right: 1px solid #c1c1c1;
+            margin:0 25px;
+        }
+
+    .divLeft {
+        margin-left: 35px;
+        
+        .btnWaves {
+            padding: 10px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #DC3C5B, #E7533F, #F5701C);
+        }
+
+        .btnSecury {
+            padding: 15px;
+        }
+        
+        .btnPerson{ 
+            padding: 15px;
+            background: linear-gradient(to right, #DC3C5B, #E7533F, #F5701C);
+        }
+
+        .search {
+            margin-left: 40px;
+            box-shadow: 0 2px 3px -2px #c1c1c1;
+            font-style: italic;
+        }
+
+    }
+
+    .divRight {
+        .btnInclude {
+            padding: 15px;
+            margin-left: 10px;
+        }
+
+        .btnTune {
+            padding: 15px;
+        }
+    }
+}
+
+.headerMenuFilter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 5px; 
+    box-shadow: 0 4px 4px -4px #c1c1c1;
+    margin-bottom: 40px;
+}
+
+.contentMenuFilter {
+    background-color: #F5F5F5;
+}
+  
+
+
