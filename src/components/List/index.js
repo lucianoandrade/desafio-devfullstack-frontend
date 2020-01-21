@@ -18,7 +18,6 @@ import CreateIcon from '@material-ui/icons/Create';
 import DeleteIcon from '@material-ui/icons/Delete';
 import SecurityIcon from '@material-ui/icons/Security';
 
-import usersData from '../../mock/users';
 import './styles.scss';
 
 const StyledTableCell = withStyles(theme => ({
@@ -40,14 +39,9 @@ const StyledTableRow = withStyles(theme => ({
   },
 }))(TableRow);
 
-const getUserData = (data) => {
-  return data.dataUsers;
-};
 
-const row = getUserData(usersData)
-
-function ListUser() {
-  
+function ListUser(props) {
+  const row = props.usersFiltered
   return (
     <>
     <TableContainer className="listUserContainer">

@@ -14,7 +14,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
 import "./styles.scss";
 
-function Header() {
+function Header(props) {
 
 
   const useStyles = makeStyles(theme => ({
@@ -40,6 +40,10 @@ function Header() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleChange = (e) => {
+    props.changeFilter(e.target.value);
+  };
   
   return (
       <header className="headerContainer">
@@ -54,7 +58,7 @@ function Header() {
           <Button variant="contained" className="btnPerson" color="primary">
             <PersonIcon />
           </Button>
-          <Input type="text" name="search" className="search" placeholder="Pesquisar..."/>
+          <Input type="text" name="search" onChange={handleChange} className="search" placeholder="Pesquisar..."/>
           <Button className="btnSearch">
             <SearchIcon />
           </Button>
@@ -78,17 +82,17 @@ function Header() {
           >
             <Fade in={open}>
               <div className={classes.paper}>
-                <div className="headerMenuFilter"> 
-                  <h2 id="transition-modal-title"><TuneIcon style={{ color: '#666666' }}/> Filtros</h2>
+                <div className="headerMenuSide"> 
+                  <h2 id="transition-modal-title"><TuneIcon className="icon"/> Filtros</h2>
                   <Button
                     onClick={handleClose}
                     variant="contained" 
                     color="secondary"
                   >
-                    <CloseIcon style={{ color: '#666666' }}/>
+                    <CloseIcon className="icon"/>
                   </Button>
                 </div>
-                <div className="contentMenuFilter">              
+                <div className="contentMenuSide">              
                 <p id="transition-modal-description"> <i>Utilize os filtros abaixo para refinar os resultados da tabela,
                   clique no botão APLICAR para salvar as alterações.</i> </p>
                 </div>
@@ -101,13 +105,13 @@ function Header() {
           </Button>
           <span className="toSeparate"></span>
           <Button>
-            <HomeIcon style={{ color: '#666666' }}/>
+            <HomeIcon className="icon"/>
           </Button>
           <Button>
-            <SettingsIcon  style={{ color: '#666666' }}/>
+            <SettingsIcon className="icon"/>
           </Button>
           <Button>
-            <PowerSettingsNewIcon style={{ color: '#666666' }}/>
+            <PowerSettingsNewIcon className="icon"/>
           </Button>
         </section>
       </header>
