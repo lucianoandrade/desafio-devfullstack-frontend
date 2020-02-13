@@ -1,11 +1,11 @@
 Desafio FullStack - FrontEnd
 
 Tecnologias Utilizadas :
-ReactJs
-Material ui
-SASS
-React Hooks
-Instalação
+ReactJs<br/>
+Material ui<br/>
+SASS<br/>
+React Hooks<br/>
+Instalação<br/>
 
 - Se estiver utilizando Yarn
 
