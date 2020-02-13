@@ -1,6 +1,7 @@
-Desafio FullStack - FrontEnd
+<b>Desafio FullStack - FrontEnd</b>
 
-Tecnologias Utilizadas :
+Tecnologias Utilizadas :<br/>
+
 ReactJs<br/>
 Material ui<br/>
 SASS<br/>
